@@ -62,7 +62,7 @@ Prichádzajúci útok od nepriateľov sa náhodne rozdeľuje na jednotlivé modu
 
 Vyzbrojenie zbraňových platforiem je veda a umenie zároveň. Každému sa páči niečo iné, respektíve preferuje inú taktiku boja. Nižšie popisujem moje vyzbrojenie, s ktorým zvládam boj s takmer akýmkoľvek zlom okrem Leviatana.
 
-Na *prvú* zbraňovú platformu daj *na obe strany* [Gatlingy](https://source.outspacegame.com/en/spacecraft/weapons/list/3/), ktoré budeš mať takmer neustále (až na malé výnimky) prepnuté do C-M (counter missiles) módu, v ktorom *úplne automaticky* zostreľujú rakety vypálené na tvoju loď. Rakety strieľajú Golemovia a Strážcovia. Platí to aj pre Svetlušky (Fireflies) vypustené Strážcom, ktoré sa v blízkosti lode premenia na projektily. V tomto štádiu ich vedia Gatlingy zničiť.
+Na *prvú* zbraňovú platformu daj *na obe strany* [Gatlingy](https://source.outspacegame.com/cs/kosmicka-lod/palubni-zbrane/list/3/), ktoré budeš mať takmer neustále (až na malé výnimky) prepnuté do C-M (counter missiles) módu, v ktorom *úplne automaticky* zostreľujú rakety vypálené na tvoju loď. Rakety strieľajú Golemovia a Strážcovia. Platí to aj pre Svetlušky (Fireflies) vypustené Strážcom, ktoré sa v blízkosti lode premenia na projektily. V tomto štádiu ich vedia Gatlingy zničiť.
 
 Na *všetky ostatné* zbraňové platformy nainštaluj *na obe strany* čo najsilnejšie lasery. Kráľom laserov je [THEL4 Quadplex](https://source.outspacegame.com/cs/kosmicka-lod/palubni-zbrane/list/13/) s dostrelom až 30km, ktorý sa dá pomerne ľahko kúpiť na NPC staniciach. Ak Quadplex nevieš zohnať, prípadne nemáš dosť peňazí, riešenie je ľahké – zober THEL2 alebo aj základný THEL a časom vymeníš za lepší.
 
@@ -246,7 +246,7 @@ Na náhodne vybrané stanice hra generuje tzv. nájazdy, čo bývajú väčšino
 
 ### Osamotený Strážca
 
-Osamotený [Strážca](https://source.outspacegame.com/cs/svet/zlo/list/3/) je zo začiatku výzva, ale po niekoľkých pokusoch to začne byť pomerne jednoduché. Strážca má pomerne veľa zdravia (asi 3000 HP), takže zdolať ho môže trvať dlhé minúty. Na začiatku, keď som mal loď osadenú len 3 či 4 platformami, som so Strážcami bojoval aj 20 minút.
+Osamotený [Strážca](https://source.outspacegame.com/cs/svet/zlo/list/8/) je zo začiatku výzva, ale po niekoľkých pokusoch to začne byť pomerne jednoduché. Strážca má pomerne veľa zdravia (asi 3000 HP), takže zdolať ho môže trvať dlhé minúty. Na začiatku, keď som mal loď osadenú len 3 či 4 platformami, som so Strážcami bojoval aj 20 minút.
 
 Špecifikum Strážcu je to, že okrem *rakiet* vypúšťa aj *Svetlušky (Fireflies)*. Rakiet sa báť nemusíš, na to máme na lodi Gatling prepnutý do C-M režimu. Svetlušky sú horšie. Ihneď po vypustení fungujú skoro ako klasický nepriateľ, dajú sa zamerať a zostreliť palubnými zbraňami, avšak na rozdiel od iných nepriateľov letia priamo na tvoju loď!!
 

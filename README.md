@@ -2,4 +2,4 @@
 
 [Outspace Dokumentácia (SK)](sk_doc/README.md)  
   
-Outspace Documentation (EN) ...TBD
+[Outspace Documentation (EN)](en_doc/README.md)
