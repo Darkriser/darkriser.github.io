@@ -1,0 +1,330 @@
+/* ===== Global page settings (for PDF) ===== */
+
+@page {
+  size: A4;
+  margin: 20mm 18mm 22mm 18mm;   /* top, right, bottom, left */
+}
+
+/* ===== Main tutorial style ===== */
+
+.markdown-preview.markdown-preview {
+  /* Base typography (screen + print) */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #222;
+  background: #f7f7f9;
+  padding: 32px 40px;
+  box-sizing: border-box;
+}
+
+/* Constrain content width like a tutorial page */
+.markdown-preview.markdown-preview > :first-child {
+  /* wrapper element */
+}
+
+.markdown-preview.markdown-preview {
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+/* ===== Headings ===== */
+
+.markdown-preview.markdown-preview h1,
+.markdown-preview.markdown-preview h2,
+.markdown-preview.markdown-preview h3,
+.markdown-preview.markdown-preview h4 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-preview.markdown-preview h1 {
+  font-size: 2.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.markdown-preview.markdown-preview h2 {
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 0.25rem;
+}
+
+.markdown-preview.markdown-preview h3 {
+  font-size: 1.25rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-preview.markdown-preview h4 {
+  font-size: 1.05rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666;
+}
+
+/* ===== Body text, lists, links ===== */
+
+.markdown-preview.markdown-preview p,
+.markdown-preview.markdown-preview li {
+  font-size: 0.95rem;
+  margin: 0 0 0.8rem;
+}
+
+.markdown-preview.markdown-preview ul,
+.markdown-preview.markdown-preview ol {
+  padding-left: 1.5rem;
+  margin: 0.4rem 0 1rem;
+}
+
+.markdown-preview.markdown-preview li + li {
+  margin-top: 0.2rem;
+}
+
+.markdown-preview.markdown-preview a {
+  color: #005fb8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 95, 184, 0.25);
+}
+
+.markdown-preview.markdown-preview a:hover {
+  border-bottom-color: rgba(0, 95, 184, 0.6);
+}
+
+/* ===== Inline code & code blocks ===== */
+
+.markdown-preview.markdown-preview code {
+  font-family: "Fira Code", "JetBrains Mono", Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  padding: 0.1em 0.25em;
+  border-radius: 4px;
+  background: #f4f4f6;
+  border: 1px solid #e4e4e8;
+}
+
+.markdown-preview.markdown-preview pre {
+  margin: 1rem 0;
+}
+
+.markdown-preview.markdown-preview pre code {
+  display: block;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #f5f5f5;
+  border: none;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-wrap; /* nicer wrapping in PDF */
+}
+
+/* ===== Blockquotes (for tips / notes) ===== */
+
+.markdown-preview.markdown-preview blockquote {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #3c78d8;
+  background: #f2f6ff;
+  color: #333;
+  border-radius: 4px;
+}
+
+.markdown-preview.markdown-preview blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Tables (common in tutorials) ===== */
+
+.markdown-preview.markdown-preview table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+}
+
+.markdown-preview.markdown-preview th,
+.markdown-preview.markdown-preview td {
+  border: 1px solid #dddddd;
+  padding: 0.45rem 0.6rem;
+}
+
+.markdown-preview.markdown-preview th {
+  background: #f0f2f5;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* ===== Images & "figures" ===== */
+
+/* Images side-by-side */
+.markdown-preview.markdown-preview img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.6rem 0.6rem;
+  border-radius: 4px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  vertical-align: top;
+}
+
+/* Paragraphs that contain only images: center the group */
+.markdown-preview.markdown-preview p:has(> img) {
+  text-align: center;
+}
+
+/* If the paragraph has only one image, treat it like a big centered figure */
+.markdown-preview.markdown-preview p > img:only-child {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* 
+   Simple captions:
+   Write in markdown:  ![Alt text](image.png) *Caption text*
+   That becomes <img> followed by <em>, which we style as caption.
+*/
+.markdown-preview.markdown-preview img + em {
+  display: block;
+  text-align: center;
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+  color: #666;
+}
+
+/* avoid huge images eating a whole page in PDF */
+@media print {
+  .markdown-preview.markdown-preview img {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    max-height: 220mm;
+  }
+}
+
+/* ===== Horizontal rules used as section breaks ===== */
+
+.markdown-preview.markdown-preview hr {
+  border: none;
+  border-top: 1px solid #e1e1e1;
+  margin: 2rem 0;
+}
+
+/* ===== Page-break rules (for A4 PDF) ===== */
+
+@media print {
+  /* Remove screen-like card styling for print */
+  .markdown-preview.markdown-preview {
+    box-shadow: none;
+    border-radius: 0;
+    background: #ffffff;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  /* page break before major sections (H1), except the first one */
+  .markdown-preview.markdown-preview h1 {
+    page-break-before: always;
+  }
+
+  .markdown-preview.markdown-preview h1:first-of-type {
+    page-break-before: avoid;
+  }
+
+  .markdown-preview.markdown-preview h1,
+  .markdown-preview.markdown-preview h2,
+  .markdown-preview.markdown-preview h3 {
+    page-break-after: avoid;
+  }
+
+  .markdown-preview.markdown-preview pre,
+  .markdown-preview.markdown-preview blockquote,
+  .markdown-preview.markdown-preview table {
+    page-break-inside: avoid;
+  }
+}
+
+/* ===== Prince PDF fine-tuning (if you use “PDF (prince)” export) ===== */
+
+.markdown-preview.markdown-preview.prince {
+  /* Prince respects @page above; here you can tweak extra print-only rules */
+}
+
+/* === In-document Table of Contents === */
+
+.markdown-preview.markdown-preview .doc-toc {
+  margin: 1.5rem 0 2rem;
+}
+
+/* The actual box (whatever MPE generates goes inside .doc-toc) */
+.markdown-preview.markdown-preview .doc-toc > * {
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #e1e1e8;
+  background: #f7f8fc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  font-size: 0.9rem;
+}
+
+/* Optional little title inside the box */
+.markdown-preview.markdown-preview .doc-toc::before {
+  content: "Obsah";
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+/* Lists inside the TOC */
+.markdown-preview.markdown-preview .doc-toc ul {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding-left: 0;
+}
+
+.markdown-preview.markdown-preview .doc-toc li {
+  margin: 0.12rem 0;
+}
+
+/* Indent nested levels and add a subtle vertical line */
+.markdown-preview.markdown-preview .doc-toc ul ul {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+  padding-left: 1rem;
+  border-left: 1px dashed #d0d0dd;
+}
+
+/* Links */
+.markdown-preview.markdown-preview .doc-toc a {
+  text-decoration: none;
+  color: #374a7a;
+  border-bottom: 1px solid transparent;
+}
+
+.markdown-preview.markdown-preview .doc-toc a:hover {
+  border-bottom-color: rgba(55, 74, 122, 0.4);
+}
+
+/* Print: keep it single column & clear */
+@media print {
+  .markdown-preview.markdown-preview .doc-toc > * {
+    box-shadow: none;
+    background: #ffffff;
+  }
+}
